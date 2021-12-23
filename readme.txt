@@ -1,5 +1,25 @@
-# [Strong Password Generator](https://development.azurecurve.co.uk/classicpress-plugins/strong-password-generator/)
-![Plugin Banner](/assets/pluginimages/banner-1544x500.png)
+=== Strong Password Generator ===
+
+Description:	Create password forms allowing users to create strong passwords consisting of upper/lower case letters, numbers and symbols.
+Version:		1.0.0
+Tags:			password,passwords
+Author:			azurecurve
+Author URI:		https://development.azurecurve.co.uk/
+Contributors:	azurecurve
+Plugin URI:		https://development.azurecurve.co.uk/classicpress-plugins/strong-password-generator/
+Download link:	https://github.com/azurecurve/azrcrv-strong-password-generator/releases/download/v1.0.0/azrcrv-strong-password-generator.zip
+Donate link:	https://development.azurecurve.co.uk/support-development/
+Requires PHP:	5.6
+Requires:		1.0.0
+Tested:			4.9.99
+Text Domain:	azrcrv-rlm
+Domain Path:	/languages
+License: 		GPLv2 or later
+License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
+
+Generate strong passwords.
+
+== Description ==
 
 # Description
 
@@ -37,12 +57,33 @@ Example shortcode usage:
 
 This plugin is multisite compatible, with options set on a per site basis.
 
+== Installation ==
+
 # Installation Instructions
 
- * Download the plugin from [GitHub](https://github.com/azurecurve/azrcrv-strong-password-generator/releases/latest/).
+ * Download the plugin from [GitHub](https://github.com/azurecurve/azrcrv-redirect-strong-password-generator/releases/latest/).
  * Upload the entire zip file using the Plugins upload function in your ClassicPress admin panel.
  * Activate the plugin.
  * Configure relevant settings via the configuration page in the admin control panel (azurecurve menu).
+
+== Frequently Asked Questions ==
+
+# Frequently Asked Questions
+
+### Can I translate this plugin?
+Yes, the .pot file is in the plugins languages folder and can also be downloaded from the plugin page on https://development.azurecurve.co.uk; if you do translate this plugin, please sent the .po and .mo files to translations@azurecurve.co.uk for inclusion in the next version (full credit will be given).
+
+### Is this plugin compatible with both WordPress and ClassicPress?
+This plugin is developed for ClassicPress, but will likely work on WordPress.
+
+== Changelog ==
+
+# Changelog
+
+### [Version 1.0.0](https://github.com/azurecurve/azrcrv-strong-password-generator/releases/v1.0.0)
+ * Initial release.
+
+== Other Notes ==
 
 # About azurecurve
 
