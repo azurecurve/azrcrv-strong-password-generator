@@ -27,7 +27,7 @@ Create password forms allowing users to create strong passwords consisting of up
 
 Options are maintained via a Settings page on the **azurecurve** menu.
 
-Password forms are placed using a shortcode and can have a number of parameters supplied to override the defaults from the options page; each shortcode must have an `id` parameter supplied. Available parameters are:
+Password forms are placed using the `strong-password-generator` shortcode and can have a number of parameters supplied to override the defaults from the options page; each shortcode must have an `id` parameter supplied. Available parameters are:
  * `password-length` - length of password to be generated.
  * `password-minimum-length` - minimum length of passwords which can be generated.
  * `password-maximum-length` - maximum length of passwords which can be generated.
