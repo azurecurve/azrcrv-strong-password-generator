@@ -72,7 +72,7 @@ To install the plugin:
 # Frequently Asked Questions
 
 ### Can I translate this plugin?
- * Yes, the .pot file is in the plugins languages folder and can also be downloaded from the plugin page on https://development.azurecurve.co.uk; if you do translate this plugin, please sent the .po and .mo files to translations@azurecurve.co.uk for inclusion in the next version (full credit will be given).
+ * Yes, the .pot file is in the plugins languages folder and can also be downloaded from the plugin page on [azurecurve | Development](https://development.azurecurve.co.uk/classicpress-plugins/); if you do translate this plugin, please sent the .po and .mo files to translations@azurecurve.co.uk for inclusion in the next version (full credit will be given).
 
 ### Is this plugin compatible with both WordPress and ClassicPress?
  * This plugin is developed for ClassicPress, but will likely work on WordPress.
