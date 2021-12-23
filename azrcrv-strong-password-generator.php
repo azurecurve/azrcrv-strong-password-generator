@@ -601,9 +601,64 @@ function display_options() {
 					
 				</table>';
 				
+		$tab_3_label =  esc_html__( 'Instructions', 'azrcrv-spg' );
+		$tab_3       = '<table class="form-table azrcrv-spg">
+		
+					<tr>
+					
+						<th scope="row" colspan=2 class="section-heading">
+							
+								<h2 class="azrcrv-spg">' . esc_html__( 'Shortcode Usage', 'azrcrv-spg' ) . '</h2>
+							
+						</th>
+	
+					</tr>
+		
+					<tr>
+					
+						<td scope="row" colspan=2>
+						
+							<p>' .
+								sprintf( esc_html__( 'Password forms are placed using the %s shortcode and can have a number of parameters supplied to override the defaults from the options page; each shortcode must have an %s parameter supplied. Available parameters are:', 'azrcrv-spg' ), '<code>&lsqb;strong-password-generator&rsqb;</code>', '<code>id</code>' ) . '
+									 <ul>
+										<li><code>password-length</code> - ' . esc_html__( 'length of password to be generated.' , 'azrcrv-spg' ) . '
+										<li><code>password-minimum-length</code> - ' . esc_html__( 'minimum length of passwords which can be generated.' , 'azrcrv-spg' ) . '
+										<li><code>password-maximum-length</code> - ' . esc_html__( 'maximum length of passwords which can be generated.' , 'azrcrv-spg' ) . '
+										<li><code>password-number</code> - ' . esc_html__( 'number of passwords to generate.' , 'azrcrv-spg' ) . '
+										<li><code>password-maximum-number</code> - ' . esc_html__( 'maximum umber of passwords whichuser can generate.' , 'azrcrv-spg' ) . '
+										<li><code>text-before</code> - ' . esc_html__( 'text to display before password form.' , 'azrcrv-spg' ) . '
+										<li><code>text-after</code> - ' . esc_html__( 'text to display after password form.' , 'azrcrv-spg' ) . '
+										<li><code>label-password-length</code> - ' . esc_html__( 'label for password length field.' , 'azrcrv-spg' ) . '
+										<li><code>label-password-number</code> - ' . esc_html__( 'label for number of passwords to generate field.' , 'azrcrv-spg' ) . '
+										<li><code>label-lowercase</code> - ' . esc_html__( 'label for valid lowercase field.' , 'azrcrv-spg' ) . '
+										<li><code>label-uppercase</code> - ' . esc_html__( 'label for valid uppercase field.' , 'azrcrv-spg' ) . '
+										<li><code>label-numeric</code> - ' . esc_html__( 'label for valid numbers field.' , 'azrcrv-spg' ) . '
+										<li><code>label-symbols</code> - ' . esc_html__( 'label for valid symbols field.' , 'azrcrv-spg' ) . '
+										<li><code>allow-lowercase</code> - ' . esc_html__( 'allow user to include uppercase characters.' , 'azrcrv-spg' ) . '
+										<li><code>allow-uppercase</code> - ' . esc_html__( 'allow user to include uppercase characters.' , 'azrcrv-spg' ) . '
+										<li><code>allow-numeric</code> - ' . esc_html__( 'allow user to include number.' , 'azrcrv-spg' ) . '
+										<li><code>allow-symbols</code> - ' . esc_html__( 'allow user to include symbols.' , 'azrcrv-spg' ) . '
+										<li><code>valid-lowercase</code> - ' . esc_html__( 'list of valid lowercase characters.' , 'azrcrv-spg' ) . '
+										<li><code>valid-uppercase</code> - ' . esc_html__( 'list of valid uppercase characters.' , 'azrcrv-spg' ) . '
+										<li><code>valid-numeric</code> - ' . esc_html__( 'list of valid numbers.' , 'azrcrv-spg' ) . '
+										<li><code>valid-symbols</code> - ' . esc_html__( 'list of valid symbols.' , 'azrcrv-spg' ) . '
+									</ul>
+
+									<p>' . esc_html__( 'Example shortcode usage:', 'azrcrv-spg' ) . '</p>
+									
+									<p><code>[strong-password-generator id="password-1"  text-before="The password generator below can be used to produce passwords compatible with Microsoft Dynamics GP." allow-symbals=1]</code></p>
+									
+							</p>
+						
+						</td>
+					
+					</tr>
+					
+				</table>';
+				
 		$plugin_array = get_option( 'azrcrv-plugin-menu' );
 
-		$tab_3_plugins = '';
+		$tab_4_plugins = '';
 		foreach ( $plugin_array as $plugin_name => $plugin_details ) {
 			if ( $plugin_details['retired'] == 0 ) {
 				$alternative_color = '';
@@ -614,15 +669,15 @@ function display_options() {
 					$alternative_color = 'premium-';
 				}
 				if ( is_plugin_active( $plugin_details['plugin_link'] ) ) {
-					$tab_3_plugins .= "<a href='{$plugin_details['admin_URL']}' class='azrcrv-{$alternative_color}plugin-index'>{$plugin_name}</a>";
+					$tab_4_plugins .= "<a href='{$plugin_details['admin_URL']}' class='azrcrv-{$alternative_color}plugin-index'>{$plugin_name}</a>";
 				}else{
-					$tab_3_plugins .= "<a href='{$plugin_details['dev_URL']}' class='azrcrv-{$alternative_color}plugin-index'>{$plugin_name}</a>";
+					$tab_4_plugins .= "<a href='{$plugin_details['dev_URL']}' class='azrcrv-{$alternative_color}plugin-index'>{$plugin_name}</a>";
 				}
 			}
 		}
 
-		$tab_3_label =  esc_html__( 'Other Plugins', 'azrcrv-spg' );
-		$tab_3       = '<table class="form-table">
+		$tab_4_label =  esc_html__( 'Other Plugins', 'azrcrv-spg' );
+		$tab_4       = '<table class="form-table azrcrv-spg">
 		
 					<tr>
 					
@@ -643,7 +698,7 @@ function display_options() {
 					
 						<td scope="row" colspan=2>
 						
-							' . $tab_3_plugins . '
+							' . $tab_4_plugins . '
 							
 						</td>
 	
@@ -673,6 +728,9 @@ function display_options() {
 						<li class="azrcrv-ui-state-default" aria-controls="tab-panel-3" aria-labelledby="tab-3" aria-selected="false" aria-expanded="false" role="tab">
 							<a id="tab-3" class="azrcrv-ui-tabs-anchor" href="#tab-panel-3"><?php echo $tab_3_label; ?></a>
 						</li>
+						<li class="azrcrv-ui-state-default" aria-controls="tab-panel-4" aria-labelledby="tab-4" aria-selected="false" aria-expanded="false" role="tab">
+							<a id="tab-4" class="azrcrv-ui-tabs-anchor" href="#tab-panel-4"><?php echo $tab_4_label; ?></a>
+						</li>
 					</ul>
 					<div id="tab-panel-1" class="azrcrv-ui-tabs-scroll" role="tabpanel" aria-hidden="false">
 						<fieldset>
@@ -696,6 +754,14 @@ function display_options() {
 								<?php echo $tab_3_label; ?>
 							</legend>
 							<?php echo $tab_3; ?>
+						</fieldset>
+					</div>
+					<div id="tab-panel-4" class="azrcrv-ui-tabs-scroll azrcrv-ui-tabs-hidden" role="tabpanel" aria-hidden="true">
+						<fieldset>
+							<legend class='screen-reader-text'>
+								<?php echo $tab_4_label; ?>
+							</legend>
+							<?php echo $tab_4; ?>
 						</fieldset>
 					</div>
 				</div>
