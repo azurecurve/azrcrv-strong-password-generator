@@ -29,9 +29,9 @@
 	padding: 6px;
 }
 .azrcrv-ui-tabs-nav .azrcrv-ui-state-default a:hover{
-	border: 1px solid #ff8000;
-	border-bottom: 4px solid #ff8000;
-	color: #ff8000;
+	border: 1px solid #0000ff;
+	border-bottom: 4px solid #0000ff;
+	color: #0000ff;
 	background: transparent;
 	font-weight: 700;
 	padding: 6px;

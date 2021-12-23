@@ -4,7 +4,7 @@ Description:	Create password forms allowing users to create strong passwords con
 Version:		1.0.0
 Tags:			password,passwords
 Author:			azurecurve
-Author URI:		https://development.azurecurve.co.uk/
+Author URI:		https://development.azurecurve.co.uk/classicpress-plugins/
 Contributors:	azurecurve
 Plugin URI:		https://development.azurecurve.co.uk/classicpress-plugins/strong-password-generator/
 Download link:	https://github.com/azurecurve/azrcrv-strong-password-generator/releases/download/v1.0.0/azrcrv-strong-password-generator.zip
@@ -61,6 +61,7 @@ This plugin is multisite compatible, with options set on a per site basis.
 
 # Installation Instructions
 
+To install the plugin:
  * Download the plugin from [GitHub](https://github.com/azurecurve/azrcrv-redirect-strong-password-generator/releases/latest/).
  * Upload the entire zip file using the Plugins upload function in your ClassicPress admin panel.
  * Activate the plugin.
@@ -71,10 +72,10 @@ This plugin is multisite compatible, with options set on a per site basis.
 # Frequently Asked Questions
 
 ### Can I translate this plugin?
-Yes, the .pot file is in the plugins languages folder and can also be downloaded from the plugin page on https://development.azurecurve.co.uk; if you do translate this plugin, please sent the .po and .mo files to translations@azurecurve.co.uk for inclusion in the next version (full credit will be given).
+ * Yes, the .pot file is in the plugins languages folder and can also be downloaded from the plugin page on https://development.azurecurve.co.uk; if you do translate this plugin, please sent the .po and .mo files to translations@azurecurve.co.uk for inclusion in the next version (full credit will be given).
 
 ### Is this plugin compatible with both WordPress and ClassicPress?
-This plugin is developed for ClassicPress, but will likely work on WordPress.
+ * This plugin is developed for ClassicPress, but will likely work on WordPress.
 
 == Changelog ==
 
@@ -87,7 +88,7 @@ This plugin is developed for ClassicPress, but will likely work on WordPress.
 
 # About azurecurve
 
-**azurecurve** was one of the first plugin developers to start developing for Classicpress; all plugins are available from [azurecurve Development](https://development.azurecurve.co.uk/) and are integrated with the [Update Manager plugin](https://codepotent.com/classicpress/plugins/update-manager/) for fully integrated, no hassle, updates.
+**azurecurve** was one of the first plugin developers to start developing for Classicpress; all plugins are available from [azurecurve Development](https://development.azurecurve.co.uk/classicpress-plugins/) and are integrated with the [Update Manager plugin](https://codepotent.com/classicpress/plugins/update-manager/) for fully integrated, no hassle, updates.
 
 The other plugins available from **azurecurve** are:
  * Add Open Graph Tags - [details](https://development.azurecurve.co.uk/classicpress-plugins/add-open-graph-tags/) / [download](https://github.com/azurecurve/azrcrv-add-open-graph-tags/releases/latest/)
