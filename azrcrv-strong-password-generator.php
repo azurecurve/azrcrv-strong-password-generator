@@ -646,7 +646,7 @@ function display_options() {
 
 									<p>' . esc_html__( 'Example shortcode usage:', 'azrcrv-spg' ) . '</p>
 									
-									<p><code>[strong-password-generator id="password-1"  text-before="The password generator below can be used to produce passwords compatible with Microsoft Dynamics GP." allow-symbals=1]</code></p>
+									<p><code>[strong-password-generator id="password-1"  text-before="The password generator below can be used to produce passwords compatible with Microsoft Dynamics GP." allow-symbols=1]</code></p>
 									
 							</p>
 						

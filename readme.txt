@@ -52,7 +52,7 @@ Password forms are placed using the `strong-password-generator` shortcode and ca
 
 Example shortcode usage:
 ```
-[strong-password-generator id="password-1"  text-before="The password generator below can be used to produce passwords compatible with Microsoft Dynamics GP." allow-symbals=1]
+[strong-password-generator id="password-1"  text-before="The password generator below can be used to produce passwords compatible with Microsoft Dynamics GP." allow-symbols=1]
 ```
 
 This plugin is multisite compatible, with options set on a per site basis.
