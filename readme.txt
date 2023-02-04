@@ -1,15 +1,16 @@
 === Strong Password Generator ===
 
 Description:	Create password forms allowing users to create strong passwords consisting of upper/lower case letters, numbers and symbols.
-Version:		1.0.1
+Version:		1.0.2
 Tags:			password,passwords
 Author:			azurecurve
 Author URI:		https://development.azurecurve.co.uk/classicpress-plugins/
 Contributors:	azurecurve
 Plugin URI:		https://development.azurecurve.co.uk/classicpress-plugins/strong-password-generator/
-Download link:	https://github.com/azurecurve/azrcrv-strong-password-generator/releases/download/v1.0.1/azrcrv-strong-password-generator.zip
+Download link:	https://github.com/azurecurve/azrcrv-strong-password-generator/releases/download/v1.0.2/azrcrv-strong-password-generator.zip
 Donate link:	https://development.azurecurve.co.uk/support-development/
 Requires PHP:	5.6
+Requires CP:	1.0
 Requires:		1.0.0
 Tested:			4.9.99
 Text Domain:	azrcrv-rlm
@@ -81,6 +82,9 @@ To install the plugin:
 
 # Changelog
 
+### [Version 1.0.2](https://github.com/azurecurve/azrcrv-strong-password-generator/releases/v1.0.2)
+ * Update readme file for compatibility with ClassicPress Directory.
+ 
 ### [Version 1.0.1](https://github.com/azurecurve/azrcrv-strong-password-generator/releases/v1.0.1)
  * Update readme files.
  * Update language template.

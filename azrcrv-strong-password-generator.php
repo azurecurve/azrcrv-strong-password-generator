@@ -3,7 +3,7 @@
  * ------------------------------------------------------------------------------
  * Plugin Name: Strong Password Generator
  * Description: Generate strong passwords.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: azurecurve
  * Author URI: https://development.azurecurve.co.uk/classicpress-plugins/
  * Plugin URI: https://development.azurecurve.co.uk/classicpress-plugins/link-managements/
