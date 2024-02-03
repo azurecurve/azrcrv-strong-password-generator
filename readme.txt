@@ -1,25 +1,5 @@
 === Strong Password Generator ===
 
-Description:	Create password forms allowing users to create strong passwords consisting of upper/lower case letters, numbers and symbols.
-Version:		1.0.2
-Tags:			password,passwords
-Author:			azurecurve
-Author URI:		https://development.azurecurve.co.uk/classicpress-plugins/
-Contributors:	azurecurve
-Plugin URI:		https://development.azurecurve.co.uk/classicpress-plugins/strong-password-generator/
-Download link:	https://github.com/azurecurve/azrcrv-strong-password-generator/releases/download/v1.0.2/azrcrv-strong-password-generator.zip
-Donate link:	https://development.azurecurve.co.uk/support-development/
-Requires PHP:	5.6
-Requires CP:	1.0
-Requires:		1.0.0
-Tested:			4.9.99
-Text Domain:	azrcrv-rlm
-Domain Path:	/languages
-License: 		GPLv2 or later
-License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
-
-Generate strong passwords.
-
 == Description ==
 
 # Description
@@ -82,6 +62,10 @@ To install the plugin:
 
 # Changelog
 
+### [Version 1.0.3](https://github.com/azurecurve/azrcrv-strong-password-generator/releases/v1.0.3)
+ * Update plugin header and readme for compatibility with ClassicPress Directory v2.
+ * Update Update Manager to version 2.5.0.
+ 
 ### [Version 1.0.2](https://github.com/azurecurve/azrcrv-strong-password-generator/releases/v1.0.2)
  * Update readme file for compatibility with ClassicPress Directory.
  
@@ -118,7 +102,6 @@ The other plugins available from **azurecurve** are:
  * Filtered Categories - [details](https://development.azurecurve.co.uk/classicpress-plugins/filtered-categories/) / [download](https://github.com/azurecurve/azrcrv-filtered-categories/releases/latest/)
  * Flags - [details](https://development.azurecurve.co.uk/classicpress-plugins/flags/) / [download](https://github.com/azurecurve/azrcrv-flags/releases/latest/)
  * Floating Featured Image - [details](https://development.azurecurve.co.uk/classicpress-plugins/floating-featured-image/) / [download](https://github.com/azurecurve/azrcrv-floating-featured-image/releases/latest/)
- * From Twitter - [details](https://development.azurecurve.co.uk/classicpress-plugins/from-twitter/) / [download](https://github.com/azurecurve/azrcrv-from-twitter/releases/latest/)
  * Gallery From Folder - [details](https://development.azurecurve.co.uk/classicpress-plugins/gallery-from-folder/) / [download](https://github.com/azurecurve/azrcrv-gallery-from-folder/releases/latest/)
  * Get GitHub File - [details](https://development.azurecurve.co.uk/classicpress-plugins/get-github-file/) / [download](https://github.com/azurecurve/azrcrv-get-github-file/releases/latest/)
  * Icons - [details](https://development.azurecurve.co.uk/classicpress-plugins/icons/) / [download](https://github.com/azurecurve/azrcrv-icons/releases/latest/)
@@ -148,7 +131,6 @@ The other plugins available from **azurecurve** are:
  * Taxonomy Order - [details](https://development.azurecurve.co.uk/classicpress-plugins/taxonomy-order/) / [download](https://github.com/azurecurve/azrcrv-taxonomy-order/releases/latest/)
  * Theme Switcher - [details](https://development.azurecurve.co.uk/classicpress-plugins/theme-switcher/) / [download](https://github.com/azurecurve/azrcrv-theme-switcher/releases/latest/)
  * Timelines - [details](https://development.azurecurve.co.uk/classicpress-plugins/timelines/) / [download](https://github.com/azurecurve/azrcrv-timelines/releases/latest/)
- * To Twitter - [details](https://development.azurecurve.co.uk/classicpress-plugins/to-twitter/) / [download](https://github.com/azurecurve/azrcrv-to-twitter/releases/latest/)
  * Toggle Show/Hide - [details](https://development.azurecurve.co.uk/classicpress-plugins/toggle-showhide/) / [download](https://github.com/azurecurve/azrcrv-toggle-showhide/releases/latest/)
  * Update Admin Menu - [details](https://development.azurecurve.co.uk/classicpress-plugins/update-admin-menu/) / [download](https://github.com/azurecurve/azrcrv-update-admin-menu/releases/latest/)
  * URL Shortener - [details](https://development.azurecurve.co.uk/classicpress-plugins/url-shortener/) / [download](https://github.com/azurecurve/azrcrv-url-shortener/releases/latest/)
