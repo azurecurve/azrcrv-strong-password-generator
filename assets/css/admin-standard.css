@@ -1,3 +1,6 @@
+/*
+	tabs
+*/
 .azrcrv-ui-tabs {
 	display: block;
 	position: relative;
@@ -44,21 +47,28 @@
 .azrcrv-ui-tabs-hidden{
 	display: none;
 }
-
-table.azrcrv-spg th.section-heading {
+/*
+	section table
+*/
+table.azrcrv-settings{
+}
+th.azrcrv-settings-section-heading {
 	margin: 0;
 	padding: 0;
 	padding-left: 6px;
 	line-height: 1em;
 	border-bottom: 5px solid #007fff;
 }
-h2.azrcrv-spg {
+h2.azrcrv-settings-section-heading {
 	line-height: 1em;
 }
-table.azrcrv-spg th {
+table.azrcrv.settings th {
 	padding-left: 12px;
 }
-div.azrcrv-spg-donate {
+/*
+	Donate button
+*/
+div.azrcrv-donate {
 	color: #007fff;
 	font-size: 1.25em;
 	font-weight: 700;
@@ -66,7 +76,7 @@ div.azrcrv-spg-donate {
 	float:right;
 	width: 300px;
 }
-div.azrcrv-spg-donate span {
+div.azrcrv-donate span {
 	font-size: 1em;
 	color: #000;
 	font-weight: 400;

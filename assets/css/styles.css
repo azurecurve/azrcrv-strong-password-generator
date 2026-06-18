@@ -1,40 +1,237 @@
-div.azrcrv-spg-form{
-	width:80%;
-	max-width:550px;
-	margin:auto;
+/* ==========================================================================
+   Strong Password Generator — frontend styles
+   ========================================================================== */
+
+/* Outer wrapper
+   ========================================================================== */
+.azrcrv-spg-form {
+	max-width: 640px;
+	margin: 0 0 1.5em;
+	font-size: 0.95em;
 }
-div.azrcrv-spg-error, div.azrcrv-spg-success{
+
+
+/* Notices (success / error)
+   ========================================================================== */
+.azrcrv-spg-notice {
+	padding: 0.65em 1em;
+	margin-bottom: 1em;
+	border-left: 4px solid transparent;
+	border-radius: 2px;
+	font-size: 0.9em;
+}
+
+.azrcrv-spg-notice--error {
+	border-left-color: #cc1818;
+	background-color: #fdf2f2;
+	color: #7a1010;
+}
+
+.azrcrv-spg-notice--success {
+	border-left-color: #46b450;
+	background-color: #f0f9f0;
+	color: #1a5c1e;
+}
+
+
+/* Password results
+   ========================================================================== */
+.azrcrv-spg-passwords {
+	margin-bottom: 1.5em;
+	padding: 1em 1.25em;
+	background: #f7f7f7;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+.azrcrv-spg-passwords__heading {
+	margin: 0 0 0.75em;
+	font-size: 0.85em;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: #555;
+}
+
+.azrcrv-spg-password-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.4em 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.azrcrv-spg-password-row:last-of-type {
+	border-bottom: none;
+}
+
+.azrcrv-spg-password-text {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.05em;
+	letter-spacing: 0.05em;
+	color: #1a1a1a;
+	word-break: break-all;
+	flex: 1;
+	padding-right: 1em;
+}
+
+.azrcrv-spg-copy-btn {
+	flex-shrink: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2em;
+	height: 2em;
+	padding: 0;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 1em;
+	line-height: 1;
+	transition: border-color 0.15s, background 0.15s;
+}
+
+.azrcrv-spg-copy-btn:hover {
+	border-color: #999;
+	background: #f0f0f0;
+}
+
+.azrcrv-spg-copy-btn--copied {
+	border-color: #46b450;
+	background: #f0f9f0;
+	color: #46b450;
+}
+
+
+/* Form fields
+   ========================================================================== */
+.azrcrv-spg-fields {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75em;
+	margin-bottom: 1.25em;
+}
+
+.azrcrv-spg-field {
+	display: flex;
+	align-items: baseline;
+	gap: 1em;
+	margin-bottom: 1em; /* Optional: adds spacing between rows */
+}
+
+.azrcrv-spg-field__label {
+	flex: 0 0 160px;
+	font-weight: 600;
+	font-size: 0.9em;
+	color: #333;
+}
+
+.azrcrv-spg-field__input {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 0.75em;
+	flex-wrap: wrap;
+}
+
+/* --- OVERRIDE DEFAULT BROWSER STYLES --- */
+.azrcrv-spg-field__input input[type="text"],
+.azrcrv-spg-field__input input[type="password"],
+.azrcrv-spg-field__input select {
+	width: 100%;            /* Makes them all stretch to fill the remaining space */
+	max-width: 350px;       /* Optional: prevents them from becoming too wide on large screens */
+	box-sizing: border-box; /* Crucial: includes padding/border in the width calculation */
+	
+	/* Unified Design */
+	padding: 0.5em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+	height: 2.5em;          /* Ensures the select and inputs are exactly the same height */
+}
+
+/* Specific fix for select elements to look cleaner */
+.azrcrv-spg-field__input select {
+	background-color: #fff;
+	cursor: pointer;
+}
+
+/* Keep your custom rule for number fields if you use them elsewhere */
+.azrcrv-spg-field__input input[type="number"] {
+	width: 5em;
+}
+
+.azrcrv-spg-field__checkbox-label {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35em;
+	font-size: 0.9em;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.azrcrv-spg-field__charset {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 0.9em;
 	width: 100%;
-	background-color: white;
-	color: black;
-	padding: 6px 6px 6px 12px;
-	margin-bottom: 6px;
-	border: 1px solid #6A6C6E;
+	max-width: 260px;
 }
-div.azrcrv-spg-error{
-	border-left: 5px solid #FF0000;
+
+
+/* Text before / after
+   ========================================================================== */
+.azrcrv-spg-text {
+	margin: 0 0 1em;
+	font-size: 0.9em;
+	color: #555;
 }
-div.azrcrv-spg-success{
-	border-left: 5px solid #008000;
+
+
+/* Submit action row
+   ========================================================================== */
+.azrcrv-spg-actions {
+	margin-top: 0.5em;
 }
-input.azrcrv-spg-visible{
-	display: none;
-	visibility: hidden;
+
+
+/* Responsive — narrow viewports
+   ========================================================================== */
+@media ( max-width: 480px ) {
+
+	.azrcrv-spg-field {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.25em;
+	}
+
+	.azrcrv-spg-field__label {
+		flex: none;
+	}
+
+	.azrcrv-spg-field__charset {
+		max-width: 100%;
+	}
+
 }
-table.azrcrv-spg thead th {
-	width: 30%;
+
+/* htpasswd result
+   ========================================================================== */
+.azrcrv-spg-passwords code.azrcrv-spg-password-text {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 0.95em;
+	letter-spacing: 0.02em;
+	color: #1a1a1a;
+	word-break: break-all;
+	flex: 1;
+	padding-right: 1em;
+	background: transparent;
+	border: none;
+	padding: 0;
+	padding-right: 1em;
 }
-table.azrcrv-spg tbody td {
-	width: 70%;
-}
-p.azrcrv-spg{
-}
-table.azrcrv-spg-password thead th {
-	background-color: #007fff;
-	color: #fff;
-}
-table.azrcrv-spg-password tbody tr:nth-child(odd) {
-	background-color: #ebf5ff;
-}
-table.azrcrv-spg-password tbody tr:nth-child(even) {
+
+/* Select field */
+.azrcrv-spg-field__input select {
+	min-width: 200px;
 }
